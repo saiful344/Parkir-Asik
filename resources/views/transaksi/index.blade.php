@@ -10,7 +10,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
 	<div class="container">
    <a class="navbar-brand" href="#">
-    <img src="./asset/logo.svg" height="61" alt="">
+    <img src="./asset/logo.png" height="61" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,6 +21,9 @@
       <input class="form-point-nav mr-sm-2 col-12" type="search" placeholder="Search" aria-label="Search">
     </form>
       <ul class="navbar-nav">
+          <li class="nav-item mr-2">
+       <a href="/" class="btn btn-ark shadow-sm text-white pl-4 pr-4">Home</a>
+     </li>
       <li class="nav-item active">
         <button type="button" class="btn btn-ark shadow-sm text-white pl-4 pr-4" data-toggle="modal" data-target="#create-item">ADD</button>
       </li>
