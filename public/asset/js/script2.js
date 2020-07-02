@@ -90,7 +90,7 @@ $("body").on("click",".edit-item",function(){
 		url : url + '/' + id
 	}).done(function(data){
 		$("#edit-item").find("input[name='no_polisi']").val(data.no_polisi)
-		$("#edit-item").find("input[name='tgl_lahir']").val(data.tgl_masuk)
+		$("#edit-item").find("input[name='tgl_masuk']").val(data.tgl_masuk)
 		$("#edit-item").find("input[name='id']").val(data.id)
 		$("#edit-item").find("input[name='waktu_masuk']").val(data.waktu_masuk);
 		$("#edit-item").find("input[name='waktu_keluar']").val(data.waktu_keluar);
@@ -103,10 +103,10 @@ $(".crud-submit-edit").click(function(e){
 
 	var form_action = $("#edit-item").find("form").attr("action");
 	var id = $("#edit-item").find("input[name='id']").val();
-	var no_polisi = $("#edit-item-item").find("input[name='no_polisi']").val();
-	var tgl_masuk = $("#edit-item-item").find("input[name='tgl_masuk']").val();
-	var waktu_masuk = $("#edit-item-item").find("input[name='waktu_masuk']").val();
-	var waktu_keluar = $("#edit-item-item").find("input[name='waktu_keluar']").val();
+	var no_polisi = $("#edit-item").find("input[name='no_polisi']").val();
+	var tgl_masuk = $("#edit-item").find("input[name='tgl_masuk']").val();
+	var waktu_masuk = $("#edit-item").find("input[name='waktu_masuk']").val();
+	var waktu_keluar = $("#edit-item").find("input[name='waktu_keluar']").val();
 	$.ajax({
 		dataType: 'json',
 		type: 'PUT',
